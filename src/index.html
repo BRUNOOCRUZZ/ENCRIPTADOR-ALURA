@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./global.css" />
+    <title>Encriptador - Alura + ONE</title>
+  </head>
+  <body>
+    <header>
+     <a href="https://alura.com.br"><img src="../assets/alura.png" alt="logo" /></a> 
+    </header>
+    <main>
+      <section class="input-area">
+        <textarea
+          name="boxText"
+          id="boxText"
+          cols="30"
+          rows="10"
+          placeholder="Digite seu texto"
+        ></textarea>
+      </section>
+
+      <section class="btn-content">
+        <div class="btn-buttons">
+          <p>
+            <img src="../assets/Vector.png" alt="simbolo de informação" />
+
+            Apenas letras minúsculas e sem acento.
+          </p>
+          <div>
+            <button class="cript" onclick="btnCrip()">Criptografar</button>
+            <button class="descript" onclick="btnDescrip()">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div id="flexContent" class="out">
+        <img
+          id="image"
+          src="../assets/boneco.png"
+          alt="Menino com lupa"
+        />
+
+        <h2 id="title">Nenhuma mensagem encontrada</h2>
+
+        <div id="copyContent">
+          <textarea spellcheck="false" class="hidden" id="out"> </textarea>
+          <p class="noText" id="noText">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+
+        <button
+          id="btnCopy"
+          class="descript hidden"
+          onclick="copyToClipBoard()"
+        >Copiar</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/devbrunocruz/">
+          Bruno Silva Cruz</a
+        >
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
